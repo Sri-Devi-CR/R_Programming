@@ -2,7 +2,7 @@
 # Objects can be Vectors, Lists, Matrices, Arrays, Factors or Data Frames
 
 # Vectors can carry a single class whereas Lists can carry multiple classes
-# Lists
+# Lists (similar to dictionaries)
 # method 1 - from a vector
 vector <- c("abc","pqr",'xyz')
 li1 <- as.list(vector)

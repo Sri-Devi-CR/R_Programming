@@ -1,7 +1,7 @@
 # OBJECTS IN R
 # Objects can be Vectors, Lists, Matrices, Arrays, Factors or Data Frames
 
-# Vectors
+# Vectors (similar to arrays)
 # method 1
 v1 = c(5,6,7)
 class(v1)
@@ -57,6 +57,34 @@ cat("\ncomp:",comp)
 #vector int to logical
 v4 = as.vector(c(1,1,0,0,1), mode = 'logical')
 print(v4)
+
+# Accessing elems in a vector
+int3 <- c(1,4,-2,0,6,3)
+print(int3[1]) # first elem
+print(int3[seq(from=1,to=length(int3),by=2)]) # alternative elems
+print(int3[1:length(int3)]) # all elems
+print(int3[2:4]) # slice of the vector
+print(int3[int3>0]) # printing on a condition
+print(int3[-3]) # print every elem other than 3rd
+print(int3[-int3>0]) # print reverse of the condition
+
+# adding an elem to a vector - method 1
+# append(x, value, after = length(x))
+# x: the vector
+# value: the value to be appended
+# after: the position after which the element has to be appended
+append(int3, 514, after = 4)
+
+# adding an elem/elems to a vector/object - method 2
+x <- 1:10
+x <- c(x, 11:20)
+x
+
+# removing an elem
+# x[-i] where i is the position of the element to be removed
+x <- x[-11]
+print(x)
+
 
 #problem 
 a <- c(1,FALSE,0,1,TRUE,0,1,0)

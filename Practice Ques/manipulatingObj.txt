@@ -1,0 +1,12 @@
+1. View objects that are available in the workspace
+Syntax:
+> objects()
+> ls()
+
+2. edit() function will invokes a text editor on an R object
+modData <- edit(newData)
+newData can be Vector, List, Matrix, Data Frame, Factor
+
+3. remove() and rm() can be used to remove objects.
+rm(comma separated string vals representing objects)
+rm(list=ls()) - removes all objects
