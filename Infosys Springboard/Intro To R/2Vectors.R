@@ -85,6 +85,10 @@ x
 x <- x[-11]
 print(x)
 
+# which() function can be used to determine the particular index (indices)
+# of a vector or array that are TRUE. If you are interested in finding the index
+# of just the minimum or maximum value you can use the function, which(x == min(x))
+# or use the more efficient which.min() / which.max() variants.
 
 #problem 
 a <- c(1,FALSE,0,1,TRUE,0,1,0)

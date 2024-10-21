@@ -43,6 +43,9 @@ mat_cbind[2:3,1:2]
 # Accessing alternative rows
 mat_cbind[c(2,4),]
 
+# Matrix multiplication
+# scalar Mat1 * Mat2
+# dot product Mat1 % * % Mat2
 
 #problem
 Jane <- c(99,96,99.2)
@@ -55,3 +58,23 @@ rownames(Stu_scores) <- c("Stats","Sql","Math")
 Stu_scores
 Stu_scores [,2] >80
 
+# Problem Statement:
+# Create two matrices m1 and m2 with dimensions of 5 rows and 4 columns.
+# Perform the scalar and the dot product between the two matrices and name
+# the resultant matrices as s1 and d1 respectively. Display the result of 
+# s1 and d1. If any error occurs during dot product operation, modify the
+# code accordingly.
+
+# Hint: For performing dot product between two matrices m1 and m2, the no. of columns in m1 must be equal to the no.of rows in m2.
+
+s <- seq(from = 10, to=90, by=10)
+mat1 <- matrix(s, nrow = 3, ncol=3)
+mat2 <- t(mat1)
+mat1
+mat2
+
+# scalar multiplication
+mat1 * mat2
+
+# dot product 
+mat1 %*% mat2
